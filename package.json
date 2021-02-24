@@ -1,0 +1,65 @@
+{
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --passWithNoTests",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why"
+  },
+  "peerDependencies": {
+    "react": ">=16.8"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "name": "usetimeoutmockinterval",
+  "author": "xigua1994 <guanpingw@gmail.com>",
+  "module": "dist/usetimeoutmockinterval.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/usetimeoutmockinterval.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/usetimeoutmockinterval.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^4.9.2",
+    "@testing-library/react-hooks": "^5.0.3",
+    "@types/react": "^17.0.2",
+    "@types/react-dom": "^17.0.1",
+    "husky": "^5.1.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "size-limit": "^4.9.2",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.1.0",
+    "typescript": "^4.2.2"
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.9"
+  }
+}
