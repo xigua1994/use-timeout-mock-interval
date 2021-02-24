@@ -1,19 +1,19 @@
-# useTimeoutMockInterval
+# use-timeout-mock-interval
 
 A custom React Hook that provides a declarative setTimeout mock setInterval called useTimeoutMockInterval.
 
-[![NPM](https://img.shields.io/npm/v/useTimeoutMockInterval.svg)](https://www.npmjs.com/package/useTimeoutMockInterval)
+[![NPM](https://img.shields.io/npm/v/use-timeout-mock-interval.svg)](https://www.npmjs.com/package/use-timeout-mock-interval)
 
 ## Installation
 
 ```
-$ npm i useTimeoutMockInterval
+$ npm i use-timeout-mock-interval
 ```
 
 or
 
 ```
-$ yarn add @use-it/interval
+$ yarn add use-timeout-mock-interval
 ```
 
 ## Usage
@@ -34,7 +34,7 @@ Here are the parameters that you can use.
 
 ```
 import React, { useState } from 'react';
-import useTimeoutMockInterval from 'useTimeoutMockInterval';
+import useTimeoutMockInterval from 'use-timeout-mock-interval';
 
 const Counter = ({ delay = 1000 }) => {
   const [count, setCount] = useState(0);

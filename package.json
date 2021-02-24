@@ -33,7 +33,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "usetimeoutmockinterval",
+  "name": "use-timeout-mock-interval",
   "author": "xigua1994 <guanpingw@gmail.com>",
   "module": "dist/usetimeoutmockinterval.esm.js",
   "size-limit": [
